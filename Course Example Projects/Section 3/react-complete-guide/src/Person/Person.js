@@ -5,7 +5,8 @@ const person = () => {
     return (
 
         <div>
-            <p> This is from Person Compoent </p>
+            <p> I'm a person and I am {Math.floor(Math.random() * 30)} years old!</p>
+            {/* Example of Dynamic Content in our JSX */}
         </div>
     )
 
