@@ -9,9 +9,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1> This is from the App Component </h1>
-        <Person />
-        <Person />
-        <Person />
+        <Person name = "Andrew" age = "30" />
+        <Person name = "Joel" age = "32" />
+        <Person name = "John" age = "24"> My Hobbies: Watch Alabama Football </Person>
       </div>
     );
 
