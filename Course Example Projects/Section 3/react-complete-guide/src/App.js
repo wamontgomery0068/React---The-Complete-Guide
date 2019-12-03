@@ -20,11 +20,10 @@ class App extends Component {
 
   }
 
-  // We can define a special property named state.
-  // State is managed from inside a component.
-  // Important, this state property here is only available like this in components that extend components.
-  // So in class-based React components.
-  // We initialize it by assigning a value and this value is a JavaScript object.
+  switchNameHandler = () => {
+    console.log("switchNameHandler was clicked!")
+  }
+
 
   render() {
 
@@ -36,8 +35,8 @@ class App extends Component {
 
         <p> This is really working!</p>
         
-        <button> Switch Name </button>
-        {/* Add a button which if we click it, simply switchesone of the names we use here. */}
+        <button onClick = {this.switchNameHandler} > Switch Name </button>
+        
         
         <Person name = {this.state.persons[0].name} age = {this.state.persons[0].age} />
         
